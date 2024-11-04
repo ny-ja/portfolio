@@ -436,7 +436,7 @@ onMounted(() => {
                                     and achievements, designed to highlight professional expertise and creative work in
                                     a visually engaging way.</p>
                                 <div class="flex items-center flex-wrap">
-                                    <a href="https://github.com/ny-ja" target="_blank"
+                                    <a href="https://github.com/ny-ja/portfolio" target="_blank"
                                         class="text-white hover:text-teal-500">
                                         <i class="fab fa-github text-2xl"></i>
                                     </a>

@@ -221,16 +221,38 @@ onMounted(() => {
                 </div>
 
                 <!-- Social Media Icons -->
-                <div class="flex justify-center md:justify-start space-x-4">
-                    <a href="https://web.facebook.com/nyjaaaaa" target="_blank" class="text-white hover:text-teal-500">
-                        <i class="fab fa-facebook text-2xl"></i>
+                <div class="flex justify-center md:justify-start space-x-2">
+                    <a href="https://web.facebook.com/nyjaaaaa" target="_blank"
+                        class="text-white rounded-full px-2 py-2 border border-teal-500 shadow-lg shadow-teal-500 hover:bg-teal-500">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-facebook">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
                     </a>
                     <a href="https://www.linkedin.com/in/johnny-ermio-600333329" target="_blank"
-                        class="text-white hover:text-teal-500">
-                        <i class="fab fa-linkedin text-2xl"></i>
+                        class="text-white rounded-full px-2 py-2 border border-teal-500 shadow-lg shadow-teal-500 hover:bg-teal-500">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
                     </a>
-                    <a href="https://github.com/ny-ja" target="_blank" class="text-white hover:text-teal-500">
-                        <i class="fab fa-github text-2xl"></i>
+                    <a href="https://github.com/ny-ja" target="_blank"
+                        class="text-white rounded-full px-2 py-2 border border-teal-500 shadow-lg shadow-teal-500 hover:bg-teal-500">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
                     </a>
                 </div>
                 <!-- Download CV Button -->
@@ -275,7 +297,6 @@ onMounted(() => {
         <section id="services" class="h-screen bg-gray-950 px-8">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-col text-center w-full mb-10 slide-in-top">
-
                     <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-200">MY SERVICES</h1>
                     <h2 class="text-xs text-teal-500 tracking-widest font-medium title-font mb-1">Your Go-To Solutions
                         for Every Challenge</h2>
@@ -377,70 +398,97 @@ onMounted(() => {
                     <div class="p-4 md:w-1/3 slide-in-bottom">
                         <div
                             class="h-full border-x-2 border-teal-500 shadow-lg shadow-teal-500 border-opacity-60 rounded-lg overflow-hidden">
-                            <video class="lg:h-48 md:h-36 w-full object-cover object-center hidden sm:flex" controls>
-                                <source src="/videos/prims-demo.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/prims.png"
+                                alt="blog">
                             <div class="p-2">
-                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-200 mb-1">WEBAPP
-                                </h2>
+                                <div class="flex justify-between items-center">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-200 mb-1">WEBAPP
+                                    </h2>
+                                    <div class="flex items-center flex-wrap">
+                                        <a href="https://github.com/ny-ja/prims" target="_blank"
+                                            class="text-white rounded-full px-1 py-1 border border-teal-500 shadow-lg shadow-teal-500 hover:bg-teal-500">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
                                 <h1 class="title-font text-lg font-medium text-teal-500 mb-3">Purok Resident Information
                                     Management System (PRIMS)</h1>
                                 <p class="leading-relaxed text-gray-200 mb-3">A web application designed to streamline
                                     and manage resident information within a purok efficiently.</p>
-                                <div class="flex items-center flex-wrap">
-                                    <a href="https://github.com/ny-ja/prims" target="_blank"
-                                        class="text-white hover:text-teal-500">
-                                        <i class="fab fa-github text-2xl"></i>
-                                    </a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="p-4 md:w-1/3 slide-in-bottom">
                         <div
                             class="h-full border-x-2 border-teal-500 shadow-lg shadow-teal-500 border-opacity-60 rounded-lg overflow-hidden">
-                            <video class="lg:h-48 md:h-36 w-full object-cover object-center hidden sm:flex" controls>
-                                <source src="/videos/barangay-poblacion-demo.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/poblacion.png"
+                                alt="blog">
                             <div class="p-2">
-                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-200 mb-1">WEBAPP
-                                </h2>
+                                <div class="flex justify-between items-center">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-200 mb-1">WEBAPP
+                                    </h2>
+                                    <div class="flex items-center flex-wrap">
+                                        <a href="https://github.com/ny-ja/barangay-poblacion" target="_blank"
+                                            class="text-white rounded-full px-1 py-1 border border-teal-500 shadow-lg shadow-teal-500 hover:bg-teal-500">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
                                 <h1 class="title-font text-lg font-medium text-teal-500 mb-3">Barangay Poblacion Website
                                 </h1>
                                 <p class="leading-relaxed text-gray-200 mb-3">An online hub for Barangay Poblacion,
                                     offering residents quick access to news, events, announcements, and essential public
                                     services.</p>
-                                <div class="flex items-center flex-wrap">
-                                    <a href="https://github.com/ny-ja/barangay-poblacion" target="_blank"
-                                        class="text-white hover:text-teal-500">
-                                        <i class="fab fa-github text-2xl"></i>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="p-4 md:w-1/3 slide-in-bottom">
                         <div
                             class="h-full border-x-2 border-teal-500 shadow-lg shadow-teal-500 border-opacity-60 rounded-lg overflow-hidden">
-                            <video class="lg:h-48 md:h-36 w-full object-cover object-center hidden sm:flex" controls>
-                                <source src="/videos/portfolio-website-demo.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="/images/summit-guardian.png" alt="blog">
                             <div class="p-2">
-                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-200 mb-1">WEBAPP
-                                </h2>
-                                <h1 class="title-font text-lg font-medium text-teal-500 mb-3">Portfolio Website</h1>
+                                <div class="flex justify-between items-center">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-200 mb-1">
+                                        CAPSTONE
+                                    </h2>
+                                    <div class="flex items-center flex-wrap">
+                                        <a href="https://github.com/ny-ja/summit-guardian" target="_blank"
+                                            class="text-white rounded-full px-1 py-1 border border-teal-500 shadow-lg shadow-teal-500 hover:bg-teal-500">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h1 class="title-font text-lg font-medium text-teal-500 mb-3">Summit Guardian</h1>
                                 <p class="leading-relaxed text-gray-200 mb-3">A personal showcase of projects, skills,
                                     and achievements, designed to highlight professional expertise and creative work in
                                     a visually engaging way.</p>
-                                <div class="flex items-center flex-wrap">
-                                    <a href="https://github.com/ny-ja/portfolio" target="_blank"
-                                        class="text-white hover:text-teal-500">
-                                        <i class="fab fa-github text-2xl"></i>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -510,8 +558,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-
 .sidebar-enter-active,
 .sidebar-leave-active {
     transition: opacity 0.3s, transform 0.3s;

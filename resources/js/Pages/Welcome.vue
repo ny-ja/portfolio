@@ -389,7 +389,7 @@ onMounted(() => {
                     <div class="p-4 md:w-1/3 slide-in-bottom">
                         <div
                             class="h-full border-x-2 border-teal-500 shadow-lg shadow-teal-500 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center hidden sm:flex"
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-left hidden sm:flex"
                                 src="/images/prims.png" alt="prims-photo">
                             <div class="p-2">
                                 <div class="flex justify-between items-center">

@@ -121,8 +121,8 @@ const linkClass = (sectionId) => {
 
 const sideNavlinkClass = (sectionId) => {
     return activeSection.value === sectionId
-        ? 'flex bg-teal-500 px-2 py-1 font-semibold border border-teal-500 rounded'
-        : 'flex text-white px-2 py-1 hover:bg-teal-500 transition duration-300 rounded'
+        ? 'flex border-y-2 border-teal-500 rounded-lg bg-teal-500 px-2 py-1 font-semibold border border-teal-500 rounded'
+        : 'flex border-y-2 border-teal-500 rounded-lg text-white px-2 py-1 hover:bg-teal-500 transition duration-300 rounded'
 }
 
 onMounted(() => {
@@ -136,10 +136,8 @@ onMounted(() => {
 
     <Head title="Welcome" />
     <div>
-        <!-- Transparent Navigation Bar with Title on Left -->
         <nav :class="activeSection !== 'home' ? ' bg-gray-900 shadow-lg' : 'bg-transparent'"
             class="fixed top-0 w-full flex items-center justify-between px-8 py-2 md:py-4 z-10">
-            <!-- Title -->
             <div class="flex space-x-2 items-center">
                 <div @click="sidebar = true"
                     class="sm:hidden flex cursor-pointer hover:bg-teal-600 my-2 rounded-md border border-teal-500 shadow-md">
@@ -154,7 +152,6 @@ onMounted(() => {
                 </div>
             </div>
 
-            <!-- Navigation Links -->
             <div class="hidden cursor-pointer sm:flex space-x-6">
                 <a :class="linkClass('home')" @click.prevent="scrollToSection('home')">Home</a>
                 <a :class="linkClass('about')" @click.prevent="scrollToSection('about')">About</a>
@@ -182,7 +179,7 @@ onMounted(() => {
                 </div>
 
                 <div class="px-2 overflow-y-auto">
-                    <ul class="space-y-1 font-medium tracking-wider cursor-pointer text-white">
+                    <ul class="space-y-4 font-medium tracking-wider cursor-pointer text-white mb-6">
                         <li>
                             <a :class="sideNavlinkClass('home')" @click.prevent="scrollToSection('home')">Home</a>
                         </li>
@@ -206,7 +203,6 @@ onMounted(() => {
             </div>
         </Transition>
 
-        <!-- Main Content Sections -->
         <section id="home"
             class="h-screen flex flex-col md:flex-row items-center bg-auto bg-left bg-no-repeat bg-gray-950 lg:bg-[url('/images/bg.png')] px-8 lg:bg-cover">
             <div
@@ -220,7 +216,6 @@ onMounted(() => {
                     <span v-if="isCursorVisible" class="cursor text-2xl md:text-4xl font-bold text-white">|</span>
                 </div>
 
-                <!-- Social Media Icons -->
                 <div class="flex justify-center md:justify-start space-x-2">
                     <a href="https://web.facebook.com/nyjaaaaa" target="_blank"
                         class="text-white rounded-full px-2 py-2 border border-teal-500 shadow-lg shadow-teal-500 hover:bg-teal-500">
@@ -255,7 +250,6 @@ onMounted(() => {
                         </svg>
                     </a>
                 </div>
-                <!-- Download CV Button -->
                 <a href="/documents/cv.pdf" download
                     class="inline-block bg-transparent text-white text-center border-y-2 shadow-lg shadow-teal-500 border-teal-500 py-2 px-4 rounded-lg w-40 hover:bg-teal-600 transition">
                     Download CV
@@ -302,7 +296,6 @@ onMounted(() => {
                         for Every Challenge</h2>
                 </div>
                 <div class="flex flex-wrap slide-in-bottom">
-                    <!-- Web Development Service -->
                     <div class="p-4 md:w-1/3">
                         <div
                             class="flex rounded-lg h-full bg-gray-100 p-2 md:p-6 flex-col border-x-2 border-teal-500 shadow-lg shadow-teal-500">
@@ -328,7 +321,6 @@ onMounted(() => {
                         </div>
                     </div>
 
-                    <!-- Capstone Projects Service -->
                     <div class="p-4 md:w-1/3">
                         <div
                             class="flex rounded-lg h-full bg-gray-100 p-2 md:p-6 flex-col border-x-2 border-teal-500 shadow-lg shadow-teal-500">
@@ -356,7 +348,6 @@ onMounted(() => {
                         </div>
                     </div>
 
-                    <!-- Computer Systems Servicing -->
                     <div class="p-4 md:w-1/3">
                         <div
                             class="flex rounded-lg h-full bg-gray-100 p-2 md:p-6 flex-col border-x-2 border-teal-500 shadow-lg shadow-teal-500">
@@ -398,8 +389,8 @@ onMounted(() => {
                     <div class="p-4 md:w-1/3 slide-in-bottom">
                         <div
                             class="h-full border-x-2 border-teal-500 shadow-lg shadow-teal-500 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/prims.png"
-                                alt="blog">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center hidden sm:flex"
+                                src="/images/prims.png" alt="prims-photo">
                             <div class="p-2">
                                 <div class="flex justify-between items-center">
                                     <h2 class="tracking-widest text-xs title-font font-medium text-gray-200 mb-1">WEBAPP
@@ -431,8 +422,8 @@ onMounted(() => {
                     <div class="p-4 md:w-1/3 slide-in-bottom">
                         <div
                             class="h-full border-x-2 border-teal-500 shadow-lg shadow-teal-500 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="/images/poblacion.png"
-                                alt="blog">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center hidden sm:flex"
+                                src="/images/poblacion.png" alt="poblacion-website">
                             <div class="p-2">
                                 <div class="flex justify-between items-center">
                                     <h2 class="tracking-widest text-xs title-font font-medium text-gray-200 mb-1">WEBAPP
@@ -463,8 +454,8 @@ onMounted(() => {
                     <div class="p-4 md:w-1/3 slide-in-bottom">
                         <div
                             class="h-full border-x-2 border-teal-500 shadow-lg shadow-teal-500 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                src="/images/summit-guardian.png" alt="blog">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center hidden sm:flex"
+                                src="/images/summit-guardian.png" alt="summit guardian">
                             <div class="p-2">
                                 <div class="flex justify-between items-center">
                                     <h2 class="tracking-widest text-xs title-font font-medium text-gray-200 mb-1">
@@ -486,9 +477,8 @@ onMounted(() => {
                                     </div>
                                 </div>
                                 <h1 class="title-font text-lg font-medium text-teal-500 mb-3">Summit Guardian</h1>
-                                <p class="leading-relaxed text-gray-200 mb-3">A personal showcase of projects, skills,
-                                    and achievements, designed to highlight professional expertise and creative work in
-                                    a visually engaging way.</p>
+                                <p class="leading-relaxed text-gray-200 mb-3">A Comprehensive IoT Solution for Mountain
+                                    Climber Health Monitoring and GPS Tracking in Search and Rescue Operations.</p>
                             </div>
                         </div>
                     </div>

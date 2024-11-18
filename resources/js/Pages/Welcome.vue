@@ -156,7 +156,7 @@ onMounted(() => {
                 <a :class="linkClass('home')" @click.prevent="scrollToSection('home')">Home</a>
                 <a :class="linkClass('about')" @click.prevent="scrollToSection('about')">About</a>
                 <a :class="linkClass('services')" @click.prevent="scrollToSection('services')">Services</a>
-                <a :class="linkClass('portfolio')" @click.prevent="scrollToSection('portfolio')">Portfolio</a>
+                <a :class="linkClass('projects')" @click.prevent="scrollToSection('projects')">Projects</a>
                 <a :class="linkClass('contact')" @click.prevent="scrollToSection('contact')">Contact</a>
             </div>
         </nav>
@@ -191,8 +191,8 @@ onMounted(() => {
                                 @click.prevent="scrollToSection('services')">Services</a>
                         </li>
                         <li>
-                            <a :class="sideNavlinkClass('portfolio')"
-                                @click.prevent="scrollToSection('portfolio')">Portfolio</a>
+                            <a :class="sideNavlinkClass('projects')"
+                                @click.prevent="scrollToSection('projects')">Projects</a>
                         </li>
                         <li>
                             <a :class="sideNavlinkClass('contact')"
@@ -378,7 +378,7 @@ onMounted(() => {
             </div>
         </section>
 
-        <section id="portfolio" class="flex items-center justify-center bg-gray-950 px-8">
+        <section id="projects" class="flex items-center justify-center bg-gray-950 px-8">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap">
                     <div class="flex flex-col text-center w-full mb-10 slide-in-top">
